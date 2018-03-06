@@ -1,4 +1,5 @@
 Cleanup replication
+MyChange1
 
 select * from distribution..MSarticles where publisher_db = 'dSite_Lite'
 
