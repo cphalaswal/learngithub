@@ -1,0 +1,24 @@
+Cleanup replication
+
+select * from distribution..MSarticles where publisher_db = 'dSite_Lite'
+
+delete from distribution..MSarticles where publisher_db = 'dSite_Lite'
+
+
+select * from distribution..MSsubscriptions where publisher_db = 'dSite_Lite'
+
+
+delete from distribution..MSsubscriptions where publisher_db = 'dSite_Lite'
+
+
+select * from MSdistribution_agents where publisher_db = 'dSite_Lite'
+
+
+delete from MSdistribution_agents where publisher_db = 'dSite_Lite'
+
+select * from MSlogreader_agents
+
+
+select * from msdb..MSdistpublishers
+
+select * from MSrepl_transactions
